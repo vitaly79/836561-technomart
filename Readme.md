@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Vetal](https://up.htmlacademy.ru/htmlcss/22/user/836561).
-* Наставник: [Сергей Артёмов].
+* Наставник: [Сергей Артёмов]( https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
