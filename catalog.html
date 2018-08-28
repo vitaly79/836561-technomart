@@ -46,7 +46,7 @@
       </div>
 
       <aside>
-        <form>  
+        <form>
           <fieldset>
             <legend>Цена</legend>
             <div>
@@ -63,31 +63,38 @@
 
           <fieldset>
             <legend>Производители</legend>
-              <input type="checkbox" name="bosch" id="bosch" checked>
+              <input type="checkbox" name="manufacturers" value="bosch" id="bosch" checked>
               <label for="bosch">Bosch</label>
-              <input type="checkbox" name="interskol" id="interskol">
+              <input type="checkbox" name="manufacturers" value="interskol" id="interskol">
               <label for="interskol">Интерскол</label>
-              <input type="checkbox" name="makita" id="makita" checked>
+              <input type="checkbox" name="manufacturers" value="makita" id="makita" checked>
               <label for="makita">Makita</label>
-              <input type="checkbox" name="dewalt" id="dewalt">
+              <input type="checkbox" name="manufacturers" value="dewalt" id="dewalt">
               <label for="dewalt">Dewalt</label>
-              <input type="checkbox" name="boshitachich" id="hitachi">
+              <input type="checkbox" name="manufacturers" value="hitachi" id="hitachi">
               <label for="hitachi">Hitachi</label>
           </fieldset>
 
           <fieldset>
             <legend>Питание</legend>
-                <input type="radio" value="" id="power-1" checked>
-                <label for="power-1">аккумуляторные</label>
-                <input type="radio" value="" id="power-2">
-                <label for="power-2">сетевые</label>
-            </fieldset>
-            <button type="submit">Показать</button>
+              <input type="radio" name="supply" value="portable" id="portable" checked>
+              <label for="portable">аккумуляторные</label>
+              <input type="radio" name="supply" value="electric" id="electric">
+              <label for="electric">сетевые</label>
+          </fieldset>
+          <button type="submit">Показать</button>
         </form>
-    </aside>
+      </aside>
 
     <div>
-<!--Тут должна быть сортировка, но я не знаю как её сверстать:(-->
+      <p>Сортировка:</p>
+      <ul>
+        <li><a href="#">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По функционалу</a></li>
+        <li><!--Стрелка вверх--></li>
+        <li><!--Стрелка вниз--></li>
+      </ul>
     </div>
 
     <section>
@@ -104,8 +111,8 @@
         <a href="#">25500 Р.</a>
       </div>
       <div>
-        <button>Купить</button>
-        <button>В закладки</button>
+        <a href="#">Купить</a>
+        <a href="#">В закладки</a>
         <p>Перфоратор BOSCH BFG 2000</p>
         <a href="#">12500 Р.</a>
       </div>
