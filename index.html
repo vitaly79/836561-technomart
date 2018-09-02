@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <a href="index.html"><img src="" alt="Логотип магазина Техномарт"></a>
-          <label for="search">Поиск </label>
-          <input type="search" name="search">
+    <header class="main-header">
+      <div>
+          <a href="index.html"><img src="non-empty" alt="Логотип магазина Техномарт"></a>
+          <label for="page-search">Поиск</label>
+          <input type="search" name="search" id="page-search">
           <a href="#">Закладки: 0 </a>
           <a href="#">Корзина: 0 </a>
           <a href="#">Оформить заказ</a>
@@ -18,12 +21,12 @@
           <a href="tel:+78125550555">+7 (812) 555-05-55 </a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
       </div>
-      <ul>
+      <ul class="user-navigation">
         <li><a href="#">Войти</a></li>
         <li><a href="#">Регистрация</a></li>
       </ul>
-      <nav>
-        <ul>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
           <li><a >Главная</a></li>
           <li><a href="#">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -36,7 +39,7 @@
     </header>
 
 
-    <main>
+    <main class="container">
       <div>
         <div>Материалы на любой вкус</div>
         <div>Инструмент НА ВСЕ СЛУЧАИ</div>
@@ -46,7 +49,7 @@
         <div>Доставка бесплатно</div>
       </div>
 
-      <section>
+      <section class="popular-items">
         <h2>Популярные товары</h2>
         <a href="#">Все популярные товары</a>
         <ul>
@@ -57,7 +60,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="">
         <h2>Популярные производители</h2>
         <a href="#">Все производители</a>
         <ul>
@@ -88,7 +91,7 @@
         </ul>
       </section>
 
-      <section class="">
+      <section class="services">
         <h2>Сервисы</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <ul>
@@ -96,11 +99,22 @@
           <li>Гарантия</li>
           <li>Кредит</li>
         </ul>
-        <p>Доставка</p>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+        <div>
+          <p>Доставка</p>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+        </div>
+        <div>
+          <p>Гарантия</p>
+          <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,
+             вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+        </div>
+        <div>
+          <p>Кредит</p>
+          <p> Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+        </div>
       </section>
 
-      <section>
+      <section class="about">
         <h2>Компания Техномарт</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: </p>
@@ -119,12 +133,12 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="main-footer">
       <section>
         <div class="logo">
-          <a><img src="" alt="Логотип магазина Техномарт"></a>
+          <a><img src="non-empty" alt="Логотип магазина Техномарт"></a>
         </div>
-        <ul>
+        <ul class="footer-list">
           <li><a href="#">Компания</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -143,14 +157,28 @@
       </section>
       <section>
         <p>© 2010–2017 Компания «Техномарт» Все права защищены</p>
-        <ul>
-          <li><a href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferer">vkontakte</a></li>
-          <li><a href="https://www.facebook.com/htmlacademy" target="_blank" rel="noopener noreferer">facebook</a></li>
-          <li><a href="https://www.instagram.com/htmlacademy/" target="_blank" rel="noopener noreferer">instagram</a></li>
-        </ul>
+        <div class="footer-social">
+          <ul>
+            <li><a class="social-button" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">vkontakte</a></li>
+            <li><a class="social-button" href="https://www.facebook.com/htmlacademy" target="_blank" rel="noopener noreferrer">facebook</a></li>
+            <li><a class="social-button" href="https://www.instagram.com/htmlacademy/" target="_blank" rel="noopener noreferrer">instagram</a></li>
+          </ul>
+        </div>
         <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
         <p>Разработано — <a href="https://htmlacademy.ru/" target="_blank">htmlacademy.ru</a></p>
       </section>
     </footer>
+
+    <section class="modal modal-login">
+      <form>
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="your-name" id="name" placeholder="Имя Фамилия" required>
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="your-email" id="email" placeholder="email@example.com" required>
+        <textarea placeholder="В свободной форме"></textarea>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+    </section>
+
   </body>
 </html>

@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт - каталог</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="" alt="Логотип магазина Техномарт"></a>
-          <label for="search">Поиск </label>
-          <input type="search" name="search">
-          <a href="#">Закладки: 0 </a>
-          <a href="#">Корзина: 0 </a>
-          <a href="#">Оформить заказ</a>
+      <div>
+        <a href="index.html"><img src="non-empty" alt="Логотип магазина Техномарт"></a>
+        <label for="page-search">Поиск</label>
+        <input type="search" name="search" id="page-search">
+        <a href="#">Закладки: 0 </a>
+        <a href="#">Корзина: 0 </a>
+        <a href="#">Оформить заказ</a>
       </div>
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <div>
@@ -36,17 +39,18 @@
     </header>
 
     <main>
-      <div>
-        <a href="catalog.html">Каталог</a>
-        <a href="#">Инструмент</a>
-        <a href="#">Перфораторы</a>
-      </div>
+      <ul class="breadcrumbs">
+        <li><a href="index.html"><img src="img/svg/icon-home.svg" alt="home"></a></li>
+        <li><a>Каталог</a></li>
+        <li><a href="#">Инструмент</a></li>
+        <li>Перфораторы</li>
+      </ul>
       <div>
         <h2>Перфораторы</h2>
       </div>
 
-      <aside>
-        <form>
+      <section class="filters">
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Цена</legend>
             <div>
@@ -84,7 +88,7 @@
           </fieldset>
           <button type="submit">Показать</button>
         </form>
-      </aside>
+      </section>
 
     <div>
       <p>Сортировка:</p>
@@ -97,71 +101,91 @@
       </ul>
     </div>
 
-    <section>
-      <div>
-        <img src="img/block-2.jpg">
+    <section class="catalog">
+      <div class="catalog-item">
+        <img src="img/block-2.jpg" alt="BOSCH BFG 3000">
         <p>Перфоратор BOSCH BFG 3000</p>
         <p>22500 Р.</p>
-        <a href="#">15500 Р.</a>
+        <p>15500 Р.</p>
+        <a href="#" class="buy">Купить</a>
+        <a href="#" class="bookmark">В закладки</a>
       </div>
-      <div>
-        <img src="img/block-3.jpg">
+
+      <div class="catalog-item">
+        <img src="img/block-3.jpg" alt="BOSCH BFG 6000">
         <p>Перфоратор BOSCH BFG 6000</p>
         <p>30500 Р.</p>
-        <a href="#">25500 Р.</a>
+        <p>25500 Р.</p>
+        <a href="#" class="buy">Купить</a>
+        <a href="#" class="bookmark">В закладки</a>
       </div>
-      <div>
-        <a href="#">Купить</a>
-        <a href="#">В закладки</a>
+
+      <div class="catalog-item">
         <p>Перфоратор BOSCH BFG 2000</p>
-        <a href="#">12500 Р.</a>
+        <p>12500 Р.</p>
+        <a href="#" class="buy">Купить</a>
+        <a href="#" class="bookmark">В закладки</a>
       </div>
-      <div>
-        <img src="img/block-2.jpg">
+
+      <div class="catalog-item">
+        <img src="img/block-2.jpg" alt="BOSCH BFG 3000">
         <p>Перфоратор BOSCH BFG 3000</p>
         <p>22500 Р.</p>
-        <a href="#">15500 Р.</a>
+        <p>15500 Р.</p>
+        <a href="#" class="buy">Купить</a>
+        <a href="#" class="bookmark">В закладки</a>
       </div>
-      <div>
-        <img src="img/block-3.jpg">
+
+      <div class="catalog-item">
+        <img src="img/block-3.jpg" alt="BOSCH BFG 6000">
         <p>Перфоратор BOSCH BFG 6000</p>
         <p>30500 Р.</p>
-        <a href="#">25500 Р.</a>
+        <p>25500 Р.</p>
+        <a href="#" class="buy">Купить</a>
+        <a href="#" class="bookmark">В закладки</a>
       </div>
-      <div>
-        <img src="img/block-4.jpg">
+
+      <div class="catalog-item">
+        <img src="img/block-4.jpg" alt="BOSCH BFG 2000">
         <p>Перфоратор BOSCH BFG 2000</p>
-        <a href="#">12500 Р.</a>
+        <p>12500 Р.</p>
+        <a href="#" class="buy">Купить</a>
+        <a href="#" class="bookmark">В закладки</a>
       </div>
-      <div>
-        <img src="img/block-2.jpg">
+
+      <div class="catalog-item">
+        <img src="img/block-2.jpg" alt="BOSCH BFG 3000">
         <p>Перфоратор BOSCH BFG 3000</p>
         <p>22500 Р.</p>
-        <a href="#">15500 Р.</a>
+        <p>15500 Р.</p>
+        <a href="#" class="buy">Купить</a>
+        <a href="#" class="bookmark">В закладки</a>
       </div>
-      <div>
-        <img src="img/block-3.jpg">
+
+      <div class="catalog-item">
+        <img src="img/block-3.jpg" alt="BOSCH BFG 6000">
         <p>Перфоратор BOSCH BFG 6000</p>
         <p>30500 Р.</p>
-        <a href="#">25500 Р.</a>
+        <p>25500 Р.</p>
+        <a href="#" class="buy">Купить</a>
+        <a href="#" class="bookmark">В закладки</a>
       </div>
-      <div>
-        <img src="img/block-4.jpg">
+
+      <div class="catalog-item">
+        <img src="img/block-4.jpg" alt="BOSCH BFG 2000">
         <p>Перфоратор BOSCH BFG 2000</p>
-        <a href="#">12500 Р.</a>
+        <p>12500 Р.</p>
+        <a href="#" class="buy">Купить</a>
+        <a href="#" class="bookmark">В закладки</a>
       </div>
-      <ul>
-        <li>
-          <a>1</a>
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-item-current"><a>1</a>
         </li>
-        <li>
-          <a href="#">2</a>
+        <li class="pagination-item"><a href="#">2</a>
         </li>
-        <li>
-          <a href="#">3</a>
+        <li class="pagination-item"><a href="#">3</a>
         </li>
-        <li>
-          <a href="#">Следующая</a>
+        <li class="pagination-item"><a href="#">Следующая</a>
         </li>
       </ul>
     </section>
@@ -181,7 +205,7 @@
     <footer>
       <section>
         <div class="logo">
-          <a><img src="" alt="Логотип магазина Техномарт"></a>
+          <a><img src="non-empty" alt="Логотип магазина Техномарт"></a>
         </div>
         <ul>
           <li><a href="#">Компания</a></li>
@@ -203,14 +227,19 @@
       <section>
         <p>© 2010–2017 Компания «Техномарт» Все права защищены</p>
         <ul>
-          <li><a href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferer">vkontakte</a></li>
-          <li><a href="https://www.facebook.com/htmlacademy" target="_blank" rel="noopener noreferer">facebook</a></li>
-          <li><a href="https://www.instagram.com/htmlacademy/" target="_blank" rel="noopener noreferer">instagram</a></li>
+          <li><a href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer">vkontakte</a></li>
+          <li><a href="https://www.facebook.com/htmlacademy" target="_blank" rel="noopener noreferrer">facebook</a></li>
+          <li><a href="https://www.instagram.com/htmlacademy/" target="_blank" rel="noopener noreferrer">instagram</a></li>
         </ul>
         <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
         <p>Разработано — <a href="https://htmlacademy.ru/" target="_blank">htmlacademy.ru</a></p>
       </section>
     </footer>
+
+    <section class="modal shopping-cart">
+        <a href="#">Оформить заказ</a>
+        <button class="button" type="submit">Продолжить покупки</button>
+    </section>
 
   </body>
 </html>
