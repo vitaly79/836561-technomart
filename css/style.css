@@ -1,0 +1,378 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+ a {
+  text-decoration: none;
+}
+
+       /*разметка основной страницы (index.html) */
+
+
+.main-header {
+  background-color: #f3f7f8;
+}
+
+.site-menu {
+  background-color: #293449;
+}
+
+.site-menu a {
+  color: #ffffff;
+  line-height: 18px;
+}
+
+.site-logo {
+  background-color:  #ee3643;
+}
+
+.main-header h1 {
+  color: #ee3643;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.address a {
+  color: #ee3643;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.address p {
+  color: #32425c;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.user-navigation {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.user-navigation a {
+  text-align: center;
+}
+
+.main-navigation {
+  background-color: #32425c;
+  color: #ffffff;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #293449;
+}
+
+        /*Стилизация раздела <main> */
+
+.item {
+  border: 2px solid black;
+  color: #ffffff;
+}
+
+.item-1 {
+  background-color: #ffbf47;
+}
+
+.item-2 {
+  background-color: #3bbce3;
+}
+
+.item-3 {
+  background-color: #dc91d8;
+}
+
+.item-4 {
+  background-color: #8ed78f;
+}
+
+.item-5 {
+  background-color: #ffbf47;
+}
+
+.item-6 {
+  background-color: #ffc047;
+}
+
+
+.item p {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.item a {
+  font-size: 14px;
+  line-height: 17.5px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.item a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.item a:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.first-item {
+  background-image: url("../img/slider-1.jpg");
+  background-repeat: no-repeat;
+}
+
+.second-item {
+  background-image: url("../img/slider-2.jpg");
+  background-repeat: no-repeat;
+}
+
+
+.slider-items .text-upper {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.slider-items .text-lower {
+  font-family: PT Sans;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.button {
+  background-color: #ee3643;
+  font-size: 14px;
+  line-height: 17.5px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
+.popular-list {
+  list-style: none;
+}
+.product h3 {
+  font-family: PT Sans;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+.discount {
+  text-decoration: line-through;
+  font-family: PT Sans;
+  font-weight: bold;
+  font-size: 17.5px;
+  line-height: 17.5px;
+  color: #a9a9a9;
+}
+
+.product span {
+  color: #ffffff;
+  background-color: #ee3643;
+  font-family: PT Sans;
+  font-weight: bold;
+  font-size: 17.5px;
+  line-height: 17.5px;
+}
+
+
+
+.catalog-popular,
+.catalog-manufacturers {
+  background-color: #f9f5f0;
+}
+
+.catalog-popular h2,
+.catalog-manufacturers h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+  font-weight: normal;
+}
+
+.manufacturers-list li {
+  border: 1px solid #eaeaea;
+  list-style: none;
+}
+
+.manufacturers-list li:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.manufacturers-list li:active {
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
+.manufacturers-list li a:active {
+  opacity: 0.3;
+}
+
+
+
+
+
+
+
+.services {
+  background-color: #f4f7f9;
+}
+
+.services h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.services-container p {
+  font-family: PT Sans;
+  color: #000000;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.changing-list li {
+  list-style: none;
+  background-color: #33445a;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.changing-list li:hover {
+  background-color: #293449;
+}
+
+
+.container-columns h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.about p,
+.contacts p {
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.about-list {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+/* Оформление футера <footer> */
+
+.footer-menu {
+  background-color: #32425c;
+}
+
+.footer-list-top,
+.footer-list-bottom {
+  list-style: none;
+}
+
+.footer-list-top a {
+  color: #f3f7f9;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.feedback a:hover,
+.developer a:hover,
+.footer-list-top a:hover,
+.footer-list-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-list-top a:active {
+  color: rgba(241, 245, 247, 0.5);
+}
+
+.footer-list-bottom a:active {
+  color: rgba(255, 209, 128, 0.5);
+}
+
+.footer-contacts {
+  color: #f3f7f9;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+
+.footer-contacts a {
+  color: #f3f7f9;
+  font-size: 18px;
+}
+
+.footer-list-bottom a {
+  color: #ffd180;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.footer-social {
+  background-color: #293449;
+}
+
+.copyright {
+  color: #ffffff;
+  line-height: 18px;
+  font-size: 18px;
+}
+
+.feedback p,
+.developer p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.feedback a,
+.developer a {
+  color: #ffd180;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.feedback a:active,
+.developer a:active {
+  color: #ee3643;
+}
