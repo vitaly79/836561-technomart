@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -10,12 +9,17 @@ body {
   background-color: #ffffff;
 }
 
+.inner-page main {
+  font-family: "PT Sans", 'Times New Roman',  serif;
+}
+
  a {
   text-decoration: none;
 }
 
-       /*разметка основной страницы (index.html) */
+/*----------------------------------------разметка основной страницы (index.html)----------------------------------------*/
 
+/*--------------------Стилизация раздела <header>--------------------*/
 
 .main-header {
   background-color: #f3f7f8;
@@ -38,6 +42,7 @@ body {
   color: #ee3643;
   font-size: 16px;
   line-height: 23px;
+  font-style: italic;
 }
 
 .address a {
@@ -69,8 +74,8 @@ body {
   color: #ffffff;
 }
 
-.site-navigation,
-.user-navigation {
+.user-navigation,
+.site-navigation {
   list-style: none;
 }
 
@@ -83,7 +88,7 @@ body {
   background-color: #293449;
 }
 
-        /*Стилизация раздела <main> */
+/*----------Стилизация раздела <main>----------*/
 
 .item {
   border: 2px solid black;
@@ -165,6 +170,8 @@ body {
   color: #ffffff;
 }
 
+ /*----------Стилизация кнопок----------*/
+
 .button {
   background-color: #ee3643;
   font-size: 14px;
@@ -181,15 +188,32 @@ body {
   background-color: #ba2732;
 }
 
+
+/*----------Стилизация <section class="popular-items"> в <main>----------*/
+
+.catalog-popular {
+  background-color: #f9f5f0;
+}
+
+.catalog-popular h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+  font-weight: normal;
+}
+
 .popular-list {
   list-style: none;
 }
+
 .product h3 {
   font-family: PT Sans;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
 }
+
 .discount {
   text-decoration: line-through;
   font-family: PT Sans;
@@ -208,14 +232,12 @@ body {
   line-height: 17.5px;
 }
 
+ /*----------Стилизация <section class="popular-manufacturers"> в <main>----------*/
 
-
-.catalog-popular,
 .catalog-manufacturers {
   background-color: #f9f5f0;
 }
 
-.catalog-popular h2,
 .catalog-manufacturers h2 {
   font-size: 30px;
   line-height: 30px;
@@ -242,10 +264,7 @@ body {
 }
 
 
-
-
-
-
+ /*----------Стилизация <section class="services"> в <main>----------*/
 
 .services {
   background-color: #f4f7f9;
@@ -279,6 +298,8 @@ body {
 }
 
 
+/*----------Стилизация <div class="container-columns"> в <main>----------*/
+
 .container-columns h2 {
   font-size: 30px;
   line-height: 30px;
@@ -298,7 +319,10 @@ body {
   line-height: 20px;
 }
 
-/* Оформление футера <footer> */
+
+/*----------------------------------------Стилизация раздела <footer>----------------------------------------*/
+
+ /*----------Стилизация <section class="footer-menu"> в <footer>----------*/
 
 .footer-menu {
   background-color: #32425c;
@@ -336,7 +360,6 @@ body {
   font-size: 18px;
 }
 
-
 .footer-contacts a {
   color: #f3f7f9;
   font-size: 18px;
@@ -348,8 +371,15 @@ body {
   font-size: 18px;
 }
 
+
+ /*----------Стилизация <section class="footer-social"> в <footer>----------*/
+
 .footer-social {
   background-color: #293449;
+}
+
+.social-buttons {
+  list-style: none;
 }
 
 .copyright {
@@ -376,3 +406,125 @@ body {
 .developer a:active {
   color: #ee3643;
 }
+
+/*-----------------------------Оформление каталога (catalog.html)-----------------------------*/
+
+/*----------Стилизация <div class="breadcrumbs-container"> в <main>----------*/
+
+.breadcrumbs {
+  list-style: none;
+  font-size: 14px;
+  line-height: 17.5px;
+  text-transform: uppercase;
+}
+
+.caption {
+  background-color: #f2f6f8;
+}
+
+.caption h2 {
+  font-family: "Cuprum";
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+}
+
+
+/*----------Стилизация <section class="filters"> в <main>----------*/
+
+.filters form {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filters legend {
+  font-size: 17.5px;
+  line-height: 31.5px;
+  font-weight: bold;
+}
+
+.filters button {
+  font-size: 14px;
+  line-height: 17.5px;
+  text-transform: uppercase;
+}
+
+.main-catalog h3 {
+  background-color: #f7f3ec;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17.5px;
+  text-transform: uppercase;
+}
+
+.filter-item legend {
+  font-size: 17.5px;
+  line-height: 31.5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sorting ul{
+  list-style: none;
+}
+
+/*----------Стилизация <section class="catalog"> в <main>----------*/
+
+.catalog-item .product-name{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.catalog-item .strike {
+  color: #999999;
+  text-decoration: line-through;
+  font-size: 17.5px;
+  line-height: 17.5px;
+  font-weight: bold;
+}
+
+.catalog-item .price {
+  background-color: #ee3643;
+  font-size: 17.5px;
+  line-height: 17.5px;
+  color: #ffffff;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item {
+  font-size: 14px;
+  line-height: 17.5px;
+  text-transform: uppercase;
+}
+
+.pagination-item a {
+  text-decoration: none;
+}
+.pagination-item.pagination-item-current {
+  background-color: #ee3643;
+}
+/*----------Стилизация <div class="brief-information"> в <main>----------*/
+
+.brief-information {
+  background-color: #f2f6f8;
+}
+
+.brief-information h2 {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.brief-information p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
