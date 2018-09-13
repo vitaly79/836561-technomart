@@ -1,6 +1,8 @@
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -17,15 +19,26 @@ body {
   text-decoration: none;
 }
 
-/*----------------------------------------разметка основной страницы (index.html)----------------------------------------*/
 
-/*--------------------Стилизация раздела <header>--------------------*/
+/* Стили шапки */
 
 .main-header {
+  min-height: 320px;
   background-color: #f3f7f8;
 }
 
+.site-menu-wrapper {
+  background-color: #293449;
+ /* width: auto;*/
+  height: 42px;
+}
+
 .site-menu {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
   background-color: #293449;
 }
 
@@ -36,6 +49,12 @@ body {
 
 .site-logo {
   background-color:  #ee3643;
+}
+
+.site-logo img {
+ /* display: block;*/
+  width: 220px;
+  height: 42px;
 }
 
 .main-header h1 {
@@ -60,27 +79,58 @@ body {
 }
 
 .user-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   font-size: 21px;
   line-height: 21px;
   color: #000000;
+  list-style: none;
 }
 
 .user-navigation a {
   text-align: center;
 }
 
+.lol {
+  display:flex;
+  width: 940px;
+  margin: 0 auto;
+  min-height: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .main-navigation {
+  margin: 0 auto;
+  padding: 0px;
+  width: 940px;
+  min-height: 60px;
+
   background-color: #32425c;
   color: #ffffff;
 }
 
-.user-navigation,
 .site-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+/*.site-navigation li {
+  margin: 22px auto 24px
+}*/
+
 .site-navigation a {
+  display: block;
   color: #ffffff;
+  padding: 10px 20px;
 }
 
 .site-navigation a:hover,
@@ -88,10 +138,19 @@ body {
   background-color: #293449;
 }
 
-/*----------Стилизация раздела <main>----------*/
+
+/* Стили основной части контента */
+.items-container {
+  margin: 60px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .item {
-  border: 2px solid black;
+  flex-basis: 300px;
+  min-height: 123px;
   color: #ffffff;
 }
 
@@ -144,14 +203,23 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+/*.slider-items {
+  min-height: 266px;
+  width: 620px;
+}*/
+
 .first-item {
   background-image: url("../img/slider-1.jpg");
   background-repeat: no-repeat;
+  min-height: 266px;
+  width: 620px;
 }
 
 .second-item {
   background-image: url("../img/slider-2.jpg");
   background-repeat: no-repeat;
+  min-height: 266px;
+  width: 620px;
 }
 
 
@@ -173,11 +241,13 @@ body {
  /*----------Стилизация кнопок----------*/
 
 .button {
+  display: inline-block;
   background-color: #ee3643;
   font-size: 14px;
   line-height: 17.5px;
   color: #ffffff;
   text-transform: uppercase;
+  height: 38px;
 }
 
 .button:hover {
@@ -191,7 +261,15 @@ body {
 
 /*----------Стилизация <section class="popular-items"> в <main>----------*/
 
+.page-main {
+  width: 940px;
+  margin: 0 auto;
+}
+
 .catalog-popular {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #f9f5f0;
 }
 
@@ -204,11 +282,24 @@ body {
 }
 
 .popular-list {
+  margin: 20px auto;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
+}
+
+.product {
+  border: 1px solid black;
+  flex-basis: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .product h3 {
   font-family: PT Sans;
+  text-align: center;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -232,9 +323,14 @@ body {
   line-height: 17.5px;
 }
 
- /*----------Стилизация <section class="popular-manufacturers"> в <main>----------*/
+ /* Стилизация секции с популярными производителями в <main> */
 
 .catalog-manufacturers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
   background-color: #f9f5f0;
 }
 
@@ -246,7 +342,18 @@ body {
   font-weight: normal;
 }
 
+.manufacturers-list {
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .manufacturers-list li {
+  flex-basis: 220px;
+  height: 145px;
+  margin-bottom: 20px;
   border: 1px solid #eaeaea;
   list-style: none;
 }
@@ -264,7 +371,7 @@ body {
 }
 
 
- /*----------Стилизация <section class="services"> в <main>----------*/
+ /* Стилизация секции с сервисами в <main> */
 
 .services {
   background-color: #f4f7f9;
@@ -298,7 +405,7 @@ body {
 }
 
 
-/*----------Стилизация <div class="container-columns"> в <main>----------*/
+/* Стилизация <div class="container-columns"> в <main> */
 
 .container-columns h2 {
   font-size: 30px;
@@ -320,16 +427,23 @@ body {
 }
 
 
-/*----------------------------------------Стилизация раздела <footer>----------------------------------------*/
+/* Стилизация футера */
 
- /*----------Стилизация <section class="footer-menu"> в <footer>----------*/
+ /*----------Стилизация <section class="footer-menu"> в футере----------*/
 
 .footer-menu {
   background-color: #32425c;
 }
 
-.footer-list-top,
-.footer-list-bottom {
+.footer-top-container {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0px;
+}
+.footer-list-top {
+  display: flex;
   list-style: none;
 }
 
@@ -350,8 +464,12 @@ body {
   color: rgba(241, 245, 247, 0.5);
 }
 
-.footer-list-bottom a:active {
-  color: rgba(255, 209, 128, 0.5);
+.footer-middle-container {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0px;
+  justify-content: space-between;
 }
 
 .footer-contacts {
@@ -365,6 +483,19 @@ body {
   font-size: 18px;
 }
 
+.footer-list-bottom {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.footer-list-bottom a:active {
+  color: rgba(255, 209, 128, 0.5);
+}
+
+
+
+
 .footer-list-bottom a {
   color: #ffd180;
   line-height: 24px;
@@ -372,20 +503,49 @@ body {
 }
 
 
- /*----------Стилизация <section class="footer-social"> в <footer>----------*/
+ /*----------Стилизация <section class="footer-social"> в футере----------*/
 
 .footer-social {
   background-color: #293449;
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-social-container {
+  width: 940px;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.footer-social-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 940px;
 }
 
 .social-buttons {
+  display: flex;
+
   list-style: none;
 }
 
 .copyright {
+  margin: 0px;
+  padding: 0px;
+  width: 227px;
   color: #ffffff;
   line-height: 18px;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+.feedback {
+  flex-basis: 135px;
+}
+
+.developer {
+  flex-basis: 96px;
 }
 
 .feedback p,
@@ -407,9 +567,11 @@ body {
   color: #ee3643;
 }
 
-/*-----------------------------Оформление каталога (catalog.html)-----------------------------*/
 
-/*----------Стилизация <div class="breadcrumbs-container"> в <main>----------*/
+
+
+
+/* Стилизация <div class="breadcrumbs-container"> в <main> */
 
 .breadcrumbs {
   list-style: none;
@@ -431,7 +593,7 @@ body {
 }
 
 
-/*----------Стилизация <section class="filters"> в <main>----------*/
+/* Стилизация секции с фильтрами в <main> */
 
 .filters form {
   font-size: 15px;
@@ -470,7 +632,7 @@ body {
   list-style: none;
 }
 
-/*----------Стилизация <section class="catalog"> в <main>----------*/
+/* Стилизация секции с каталогом в <main> */
 
 .catalog-item .product-name{
   font-weight: bold;
@@ -509,7 +671,9 @@ body {
 .pagination-item.pagination-item-current {
   background-color: #ee3643;
 }
-/*----------Стилизация <div class="brief-information"> в <main>----------*/
+
+
+/* Стилизация блока под каталогом в <main> */
 
 .brief-information {
   background-color: #f2f6f8;
