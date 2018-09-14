@@ -37,9 +37,11 @@ body {
   display: flex;
   width: 940px;
   margin: 0 auto;
+  padding: 0px;
   justify-content: space-between;
   align-items: center;
   background-color: #293449;
+  outline: 2px solid red;
 }
 
 .site-menu a {
@@ -48,7 +50,11 @@ body {
 }
 
 .site-logo {
+  display: inline-block;
+  width: 220px;
+  height: 47px;
   background-color:  #ee3643;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
 .site-logo img {
@@ -88,6 +94,7 @@ body {
   line-height: 21px;
   color: #000000;
   list-style: none;
+  outline: 2px solid red;
 }
 
 .user-navigation a {
@@ -121,6 +128,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  outline: 2px solid red;
 }
 
 /*.site-navigation li {
@@ -140,17 +148,44 @@ body {
 
 
 /* Стили основной части контента */
+
 .items-container {
-  margin: 60px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  width: 940px;
+  margin: 0px auto;
 }
 
-.item {
+.items-container-first {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  outline: 2px solid red;
+}
+
+.items-container-first .item {
   flex-basis: 300px;
   min-height: 123px;
+  color: #ffffff;
+}
+
+.items-container-second {
+  display: flex;
+  margin: 20px 0px;
+  padding: 0px;
+  justify-content: space-between;
+  outline: 2px solid red;
+}
+
+.items-container-third {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  outline: 2px solid red;
+}
+
+.items-container-third .item {
+  flex-basis: 123px;
+  width: 300px;
   color: #ffffff;
 }
 
@@ -180,15 +215,24 @@ body {
 
 
 .item p {
+  margin-top: 26px;
+  margin-left: 23px;
+
+
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
 }
 
 .item a {
+  display: block;
+  width: 135px;
+  height: 38px;
+  margin-left: 23px;
+  margin-bottom: 22px;
+
   font-size: 14px;
   line-height: 17.5px;
-  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.1);
@@ -223,14 +267,14 @@ body {
 }
 
 
-.slider-items .text-upper {
+.text-upper {
   text-transform: uppercase;
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
 }
 
-.slider-items .text-lower {
+.text-lower {
   font-family: PT Sans;
   font-size: 18px;
   line-height: 24px;
@@ -261,9 +305,14 @@ body {
 
 /*----------Стилизация <section class="popular-items"> в <main>----------*/
 
-.page-main {
+/*.page-main {
   width: 940px;
   margin: 0 auto;
+}*/
+
+.popular-items-container {
+  width: 940px;
+  margin: 0px auto;
 }
 
 .catalog-popular {
@@ -271,6 +320,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #f9f5f0;
+  outline: 2px solid red;
 }
 
 .catalog-popular h2 {
@@ -287,6 +337,7 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  outline: 2px solid red;
 }
 
 .product {
@@ -295,6 +346,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  outline: 2px solid red;
 }
 
 .product h3 {
@@ -315,8 +367,8 @@ body {
 }
 
 .product span {
-  color: #ffffff;
-  background-color: #ee3643;
+  //*color: #ffffff;
+  background-color: #ee3643;*/
   font-family: PT Sans;
   font-weight: bold;
   font-size: 17.5px;
@@ -325,12 +377,16 @@ body {
 
  /* Стилизация секции с популярными производителями в <main> */
 
+.popular-manufacturers{
+  width: 940px;
+  margin: 20px auto;
+}
+
 .catalog-manufacturers {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
-
+  outline: 2px solid red;
   background-color: #f9f5f0;
 }
 
@@ -343,11 +399,12 @@ body {
 }
 
 .manufacturers-list {
-  margin: 0px auto;
+  margin-top: 20px;
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  outline: 2px solid red;
 }
 
 .manufacturers-list li {
@@ -384,11 +441,25 @@ body {
   font-weight: normal;
 }
 
-.services-container p {
+.services-introduction {
+  width: 940px;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.services-introduction p {
   font-family: PT Sans;
   color: #000000;
   font-size: 13px;
   line-height: 24px;
+}
+
+.services-container {
+  width: 940px;
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  outline: 2px solid red;
 }
 
 .changing-list li {
@@ -407,12 +478,22 @@ body {
 
 /* Стилизация <div class="container-columns"> в <main> */
 
+.container-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0px auto;
+  padding: 0px;
+  outline: 2px solid red;
+}
+
 .container-columns h2 {
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
   text-transform: uppercase;
 }
+
 
 .about p,
 .contacts p {
@@ -435,16 +516,26 @@ body {
   background-color: #32425c;
 }
 
+.logo a {
+  display: inline-block;
+  width: 220px;
+  height: 68px;
+  background-color: #ee3643;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
 .footer-top-container {
   display: flex;
   justify-content: space-between;
   width: 940px;
   margin: 0 auto;
   padding: 0px;
+  outline: 2px solid red;
 }
 .footer-list-top {
   display: flex;
   list-style: none;
+  outline: 2px solid red;
 }
 
 .footer-list-top a {
@@ -470,6 +561,7 @@ body {
   margin: 0 auto;
   padding: 0px;
   justify-content: space-between;
+  outline: 2px solid red;
 }
 
 .footer-contacts {
@@ -487,6 +579,7 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  outline: 2px solid red;
 }
 
 .footer-list-bottom a:active {
@@ -523,11 +616,12 @@ body {
   align-items: center;
   margin: 0 auto;
   width: 940px;
+  outline: 2px solid red;
 }
 
 .social-buttons {
   display: flex;
-
+  outline: 2px solid red;
   list-style: none;
 }
 
@@ -572,12 +666,19 @@ body {
 
 
 /* Стилизация <div class="breadcrumbs-container"> в <main> */
+.breadcrumbs-container {
+  width: 940px;
+  margin: 0px auto;
+  padding: 0px;
+}
 
 .breadcrumbs {
+  display: flex;
   list-style: none;
   font-size: 14px;
   line-height: 17.5px;
   text-transform: uppercase;
+  outline: 2px solid red;
 }
 
 .caption {
@@ -594,6 +695,23 @@ body {
 
 
 /* Стилизация секции с фильтрами в <main> */
+
+.general-container {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0px auto;
+  outline: 2px solid black;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 220px;
+  outline: 2px solid red;
+  margin: 0px;
+  padding: 0px;
+}
 
 .filters form {
   font-size: 15px;
@@ -621,6 +739,7 @@ body {
   text-transform: uppercase;
 }
 
+
 .filter-item legend {
   font-size: 17.5px;
   line-height: 31.5px;
@@ -628,11 +747,43 @@ body {
   text-transform: uppercase;
 }
 
-.sorting ul{
+.sorting {
+  display: flex;
+  width: 700px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  outline: 2px solid green;
+}
+
+.sorting ul {
+  display: flex;
   list-style: none;
 }
 
 /* Стилизация секции с каталогом в <main> */
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  outline: 2px solid red;
+}
+
+.catalog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  outline: 2px solid red;
+  width: 700px;
+}
+
+.catalog-item {
+  flex-basis: 220px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  min-height: 318px;
+}
 
 .catalog-item .product-name{
   font-weight: bold;
@@ -656,6 +807,7 @@ body {
 }
 
 .pagination-list {
+  display: flex;
   list-style: none;
 }
 
